@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		092CB05C21358699003F10E6 /* RoutesResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092CAFCD21358698003F10E6 /* RoutesResource.swift */; };
 		092CB05D21358699003F10E6 /* StringsResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092CAFCE21358698003F10E6 /* StringsResource.swift */; };
 		092CB05E21358699003F10E6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092CAFD021358698003F10E6 /* Item.swift */; };
 		092CB05F21358699003F10E6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 092CAFD221358698003F10E6 /* MainViewController.xib */; };
@@ -133,7 +132,6 @@
 
 /* Begin PBXFileReference section */
 		092CAF9E21357777003F10E6 /* TodoRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		092CAFCD21358698003F10E6 /* RoutesResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesResource.swift; sourceTree = "<group>"; };
 		092CAFCE21358698003F10E6 /* StringsResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringsResource.swift; sourceTree = "<group>"; };
 		092CAFD021358698003F10E6 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		092CAFD221358698003F10E6 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -308,7 +306,6 @@
 		092CAFCC21358698003F10E6 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				092CAFCD21358698003F10E6 /* RoutesResource.swift */,
 				092CAFCE21358698003F10E6 /* StringsResource.swift */,
 			);
 			path = Constants;
@@ -769,7 +766,6 @@
 				09C616442135990D00CD8AAA /* UITableViewExtension.swift in Sources */,
 				09C616102135990D00CD8AAA /* EnumTransform.swift in Sources */,
 				09C616232135990D00CD8AAA /* SearchBarContainerView.swift in Sources */,
-				092CB05C21358699003F10E6 /* RoutesResource.swift in Sources */,
 				09C616162135990D00CD8AAA /* TransformOperators.swift in Sources */,
 				09C616322135990D00CD8AAA /* StatusBarUtils.swift in Sources */,
 				09C616312135990D00CD8AAA /* DeviceUtils.swift in Sources */,
