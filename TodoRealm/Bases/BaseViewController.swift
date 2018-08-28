@@ -1,6 +1,5 @@
 //
 //  BaseViewController.swift
-//  ClickServicesApp
 //
 //  Created by Luan Silva on 29/11/17.
 //  Copyright © 2017 squarebits. All rights reserved.
@@ -16,8 +15,7 @@ class BaseViewController: LibBaseViewController {
     internal var screenHeight: CGFloat {get{return UIScreen.main.bounds.height}}
     internal var screenWidth: CGFloat {get{return UIScreen.main.bounds.width}}
     typealias onSuccess =  (_ success: Bool) -> Void
-    internal var isNavBlack:Bool = false
-
+    
     var rootNavigation: UINavigationController {
         get{
             return appDelegate.getRootNavigation()
@@ -27,20 +25,13 @@ class BaseViewController: LibBaseViewController {
     deinit {
         deinitStackControl()
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initStackControl()
+        setupNavBar()
         setupMenuNavBarButton()
         automaticallyAdjustsScrollViewInsets = false
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        if isNavBlack{
-            setupNavBarBlack()
-        }else{
-            setupNavBar()
-        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -63,39 +54,22 @@ extension BaseViewController {
         if viewController != nil {
             vc = viewController
         }
-
-        let color = StatusBarUtils.hexStringToUIColor(hex: "#ffffff")
+        
+                let color = StatusBarUtils.hexStringToUIColor(hex: "#ffffff")
 //        var colors = [UIColor]()
 //        colors.append(StatusBarUtils.hexStringToUIColor(hex: "#21959f"))
 //        colors.append(StatusBarUtils.hexStringToUIColor(hex: "#2dbdf4"))
         
-//        NavBarUtils.hideBorder(viewController: vc)
-        NavBarUtils.setBackgroundColor(color: UIColor.white, forViewController: vc)
+        NavBarUtils.hideBorder(viewController: vc)
+        NavBarUtils.setBackgroundColor(color: color , forViewController: vc)
         
         NavBarUtils.setTintColor(color: .black, forViewController: vc)
         NavBarUtils.setTitleColor(color: .black, forViewController: vc)
         NavBarUtils.setBackBarButtonWithTitle(title: "", forViewController: vc)
     }
     
-    //MARK: Navbar
-    internal func setupNavBarBlack(viewController: BaseViewController! = nil, sideMenu: Bool! = false) {
-        
-        var vc = self
-        if viewController != nil {
-            vc = viewController
-        }
-        
-        
-        NavBarUtils.setBackgroundColor(color: UIColor.black, forViewController: vc)
-        NavBarUtils.setTitleColor(color: UIColor.white, forViewController: vc)
-        NavBarUtils.setBackBarButtonWithImage(image: UIImage(named:"arrow_back_white")!, forViewController: vc)
-//        NavBarUtils.setBackBarButtonWithTitle(title: "", forViewController: vc)
-
-    }
-    
-    
     internal func setupMenuNavBarButton() {
-    
+        
         guard let navigationController = navigationController else {
             return
         }
@@ -103,9 +77,9 @@ extension BaseViewController {
         guard navigationController.viewControllers.count == 1 else {
             return
         }
-
+        
         //set icon for menu drawer
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "drawer_icon"), style: .plain, target: self, action: #selector(SSASideMenu.presentLeftMenuViewController))
+        //        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "drawer_icon"), style: .plain, target: self, action: #selector(SSASideMenu.presentLeftMenuViewController))
     }
 }
 

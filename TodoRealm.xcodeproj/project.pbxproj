@@ -46,6 +46,8 @@
 		092CB0D321358699003F10E6 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 092CB05921358699003F10E6 /* SF-UI-Display-Thin.otf */; };
 		092CB0D421358699003F10E6 /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 092CB05A21358699003F10E6 /* SF-UI-Text-Semibold.otf */; };
 		092CB0D521358699003F10E6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 092CB05B21358699003F10E6 /* Info.plist */; };
+		094166222135D0E800BFFC2A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094166202135D0E800BFFC2A /* AddViewController.swift */; };
+		094166232135D0E800BFFC2A /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094166212135D0E800BFFC2A /* AddViewController.xib */; };
 		09C615F92135990D00CD8AAA /* BaseTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6159B2135990D00CD8AAA /* BaseTask.swift */; };
 		09C615FA2135990D00CD8AAA /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6159C2135990D00CD8AAA /* Exception.swift */; };
 		09C615FB2135990D00CD8AAA /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6159D2135990D00CD8AAA /* TaskManager.swift */; };
@@ -172,6 +174,8 @@
 		092CB05921358699003F10E6 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
 		092CB05A21358699003F10E6 /* SF-UI-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Semibold.otf"; sourceTree = "<group>"; };
 		092CB05B21358699003F10E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		094166202135D0E800BFFC2A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		094166212135D0E800BFFC2A /* AddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddViewController.xib; sourceTree = "<group>"; };
 		09C6159B2135990D00CD8AAA /* BaseTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTask.swift; sourceTree = "<group>"; };
 		09C6159C2135990D00CD8AAA /* Exception.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exception.swift; sourceTree = "<group>"; };
 		09C6159D2135990D00CD8AAA /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
@@ -322,6 +326,7 @@
 		092CAFD121358698003F10E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0941661F2135D0D600BFFC2A /* Add */,
 				092CAFD221358698003F10E6 /* MainViewController.xib */,
 				092CAFD321358698003F10E6 /* MainViewController.swift */,
 				092CAFD421358698003F10E6 /* Cell */,
@@ -399,6 +404,15 @@
 				092CB05A21358699003F10E6 /* SF-UI-Text-Semibold.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0941661F2135D0D600BFFC2A /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				094166202135D0E800BFFC2A /* AddViewController.swift */,
+				094166212135D0E800BFFC2A /* AddViewController.xib */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 		09C615992135990D00CD8AAA /* Libs */ = {
@@ -648,6 +662,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094166232135D0E800BFFC2A /* AddViewController.xib in Resources */,
 				092CB0BF21358699003F10E6 /* License Agreement for SF UI Font.pdf in Resources */,
 				092CB0C221358699003F10E6 /* SF-UI-Display-Heavy.otf in Resources */,
 				092CB0C921358699003F10E6 /* SF-UI-Display-Medium.otf in Resources */,
@@ -761,6 +776,7 @@
 				09C616062135990D00CD8AAA /* FBAnnotationCluster.swift in Sources */,
 				09C6163C2135990D00CD8AAA /* UIColorExtension.swift in Sources */,
 				09C616452135990D00CD8AAA /* UIViewExtension.swift in Sources */,
+				094166222135D0E800BFFC2A /* AddViewController.swift in Sources */,
 				09C616402135990D00CD8AAA /* UITextFieldExtension.swift in Sources */,
 				09C615FB2135990D00CD8AAA /* TaskManager.swift in Sources */,
 				09C616442135990D00CD8AAA /* UITableViewExtension.swift in Sources */,
@@ -958,8 +974,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.koperx.TodoRealm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -980,7 +1000,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.koperx.TodoRealm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

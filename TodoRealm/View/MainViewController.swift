@@ -13,16 +13,27 @@ class MainViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "ToDo"
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         setupTableView()
     }
 
-
+    @IBAction func toAdd(_ sender: UIButton) {
+        pushViewController(viewController: AddViewController(nibName: "AddViewController", bundle: nil))
+    }
+    
     
     func setupTableView(){
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.estimatedRowHeight = 45
+        tableView.estimatedRowHeight = UITableViewAutomaticDimension
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        tableView.allowsSelection = false
+        
         
         tableView.register(UINib(nibName: "TodoTableViewCell", bundle: nil), forCellReuseIdentifier: "TodoTableViewCell")
         
@@ -35,16 +46,24 @@ class MainViewController: BaseViewController {
 
 extension MainViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-//        return DBManager.sharedInstance.getDataFromDB().count
+        
+        return DBManager.sharedInstance.getDataFromDB().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TodoTableViewCell", for: indexPath as IndexPath) as! TodoTableViewCell
+        cell.delegate = self
+        cell.setupItem(item: DBManager.sharedInstance.getDataFromDB()[indexPath.row])
         
         return cell
         
     }
     
     
+}
+
+extension MainViewController:TodoCellDelegate{
+    func onItemDelete() {
+        tableView.reloadData()
+    }
 }

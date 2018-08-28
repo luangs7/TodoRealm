@@ -16,7 +16,7 @@ class DBManager {
         database = try! Realm()
     }
     func getDataFromDB() ->   Results<Item> {
-        let results: Results<Item> =   database.objects(Item.self)
+        let results: Results<Item> =   database.objects(Item.self).sorted(byKeyPath: "title")
         return results
     }
     func addData(object: Item)   {

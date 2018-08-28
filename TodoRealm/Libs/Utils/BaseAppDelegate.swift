@@ -44,7 +44,7 @@ class BaseAppDelegate: UIResponder, UIApplicationDelegate {
 //    }
     
     open func createWindow()-> UIWindow{
-        UIApplication.shared.statusBarView()?.backgroundColor = StatusBarUtils.hexStringToUIColor(hex: "#1f272f").withAlphaComponent(0.5)
+        UIApplication.shared.statusBarView()?.backgroundColor = StatusBarUtils.hexStringToUIColor(hex: "#ffffff")
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         let vc = MainViewController(nibName: "MainViewController", bundle: nil)

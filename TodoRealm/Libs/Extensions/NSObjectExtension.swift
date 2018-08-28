@@ -22,14 +22,14 @@ public extension NSObject {
         }
     }
     
-    public var maxConcurrentOperationCount : Int {
+    public var maxConcurrentOperationCounts : Int {
         get {
-            assert(queue != nil, "Você deve implementar o método setupQueue: antes de obter o maxConcurrentOperationCount")
+            assert(queue != nil, "Você deve implementar o método setupQueue: antes de obter o maxConcurrentOperationCounts")
             
             return queue!.maxConcurrentOperationCount
         }
         set {
-            assert(queue != nil, "Você deve implementar o método setupQueue: antes de mudar o maxConcurrentOperationCount")
+            assert(queue != nil, "Você deve implementar o método setupQueue: antes de mudar o maxConcurrentOperationCounts")
             
             queue?.maxConcurrentOperationCount = newValue
         }
