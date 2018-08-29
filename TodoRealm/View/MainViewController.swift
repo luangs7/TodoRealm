@@ -22,7 +22,9 @@ class MainViewController: BaseViewController {
     }
 
     @IBAction func toAdd(_ sender: UIButton) {
-        pushViewController(viewController: AddViewController(nibName: "AddViewController", bundle: nil))
+        
+                pushViewController(viewController: ContactsViewController(nibName: "ContactsViewController", bundle: nil))
+//        pushViewController(viewController: AddViewController(nibName: "AddViewController", bundle: nil))
     }
     
     
@@ -65,5 +67,6 @@ extension MainViewController: UITableViewDelegate,UITableViewDataSource{
 extension MainViewController:TodoCellDelegate{
     func onItemDelete() {
         tableView.reloadData()
+        tableView.scrollToTop(animated: false)
     }
 }

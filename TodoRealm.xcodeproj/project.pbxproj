@@ -48,6 +48,14 @@
 		092CB0D521358699003F10E6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 092CB05B21358699003F10E6 /* Info.plist */; };
 		094166222135D0E800BFFC2A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094166202135D0E800BFFC2A /* AddViewController.swift */; };
 		094166232135D0E800BFFC2A /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094166212135D0E800BFFC2A /* AddViewController.xib */; };
+		094166272136C4CC00BFFC2A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094166262136C4CC00BFFC2A /* User.swift */; };
+		094166292136C4E200BFFC2A /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094166282136C4E200BFFC2A /* Contact.swift */; };
+		099E5D622136C91C000367FE /* Conversa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099E5D612136C91C000367FE /* Conversa.swift */; };
+		099E5D662136CA05000367FE /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099E5D642136CA05000367FE /* ContactsViewController.swift */; };
+		099E5D672136CA05000367FE /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099E5D652136CA05000367FE /* ContactsViewController.xib */; };
+		099E5D6B2136CA66000367FE /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099E5D692136CA66000367FE /* ContactTableViewCell.swift */; };
+		099E5D6C2136CA66000367FE /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099E5D6A2136CA66000367FE /* ContactTableViewCell.xib */; };
+		099E5D6F2136CBB7000367FE /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099E5D6E2136CBB7000367FE /* RealmManager.swift */; };
 		09C615F92135990D00CD8AAA /* BaseTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6159B2135990D00CD8AAA /* BaseTask.swift */; };
 		09C615FA2135990D00CD8AAA /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6159C2135990D00CD8AAA /* Exception.swift */; };
 		09C615FB2135990D00CD8AAA /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6159D2135990D00CD8AAA /* TaskManager.swift */; };
@@ -176,6 +184,14 @@
 		092CB05B21358699003F10E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		094166202135D0E800BFFC2A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		094166212135D0E800BFFC2A /* AddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddViewController.xib; sourceTree = "<group>"; };
+		094166262136C4CC00BFFC2A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		094166282136C4E200BFFC2A /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		099E5D612136C91C000367FE /* Conversa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversa.swift; sourceTree = "<group>"; };
+		099E5D642136CA05000367FE /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		099E5D652136CA05000367FE /* ContactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
+		099E5D692136CA66000367FE /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		099E5D6A2136CA66000367FE /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		099E5D6E2136CBB7000367FE /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		09C6159B2135990D00CD8AAA /* BaseTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTask.swift; sourceTree = "<group>"; };
 		09C6159C2135990D00CD8AAA /* Exception.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exception.swift; sourceTree = "<group>"; };
 		09C6159D2135990D00CD8AAA /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
@@ -296,6 +312,7 @@
 		092CAFA021357777003F10E6 /* TodoRealm */ = {
 			isa = PBXGroup;
 			children = (
+				094166242136C46900BFFC2A /* Chat */,
 				09C615992135990D00CD8AAA /* Libs */,
 				092CB03821358699003F10E6 /* Bases */,
 				092CAFCC21358698003F10E6 /* Constants */,
@@ -413,6 +430,53 @@
 				094166212135D0E800BFFC2A /* AddViewController.xib */,
 			);
 			path = Add;
+			sourceTree = "<group>";
+		};
+		094166242136C46900BFFC2A /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				099E5D6D2136CBA2000367FE /* DB */,
+				099E5D632136C9D8000367FE /* View */,
+				094166252136C4BC00BFFC2A /* Model */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		094166252136C4BC00BFFC2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				094166262136C4CC00BFFC2A /* User.swift */,
+				094166282136C4E200BFFC2A /* Contact.swift */,
+				099E5D612136C91C000367FE /* Conversa.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		099E5D632136C9D8000367FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				099E5D682136CA4E000367FE /* ContactCell */,
+				099E5D642136CA05000367FE /* ContactsViewController.swift */,
+				099E5D652136CA05000367FE /* ContactsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		099E5D682136CA4E000367FE /* ContactCell */ = {
+			isa = PBXGroup;
+			children = (
+				099E5D692136CA66000367FE /* ContactTableViewCell.swift */,
+				099E5D6A2136CA66000367FE /* ContactTableViewCell.xib */,
+			);
+			path = ContactCell;
+			sourceTree = "<group>";
+		};
+		099E5D6D2136CBA2000367FE /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				099E5D6E2136CBB7000367FE /* RealmManager.swift */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 		09C615992135990D00CD8AAA /* Libs */ = {
@@ -685,6 +749,7 @@
 				092CB0D121358699003F10E6 /* SF-UI-Text-Medium.otf in Resources */,
 				092CB0BE21358699003F10E6 /* SF-UI-Display-Light.otf in Resources */,
 				092CB0D321358699003F10E6 /* SF-UI-Display-Thin.otf in Resources */,
+				099E5D6C2136CA66000367FE /* ContactTableViewCell.xib in Resources */,
 				092CB0C421358699003F10E6 /* Montserrat-Bold.ttf in Resources */,
 				092CB0C621358699003F10E6 /* SF-UI-Text-Regular.otf in Resources */,
 				092CB0C121358699003F10E6 /* SF-UI-Text-Bold.otf in Resources */,
@@ -693,6 +758,7 @@
 				092CB0BB21358699003F10E6 /* Assets.xcassets in Resources */,
 				092CB0C721358699003F10E6 /* SF-UI-Text-BoldItalic.otf in Resources */,
 				092CB0D221358699003F10E6 /* SF-UI-Text-Heavy.otf in Resources */,
+				099E5D672136CA05000367FE /* ContactsViewController.xib in Resources */,
 				092CB06221358699003F10E6 /* TodoTableViewCell.xib in Resources */,
 				092CB0CF21358699003F10E6 /* SF-UI-Display-Black.otf in Resources */,
 			);
@@ -763,6 +829,7 @@
 				09C616152135990D00CD8AAA /* DictionaryTransform.swift in Sources */,
 				09C616362135990D00CD8AAA /* AnimationUtils.swift in Sources */,
 				092CB05D21358699003F10E6 /* StringsResource.swift in Sources */,
+				094166292136C4E200BFFC2A /* Contact.swift in Sources */,
 				09C6163E2135990D00CD8AAA /* NSObjectExtension.swift in Sources */,
 				09C616192135990D00CD8AAA /* TransformType.swift in Sources */,
 				09C616392135990D00CD8AAA /* UIButtonExtension.swift in Sources */,
@@ -807,6 +874,7 @@
 				09C616142135990D00CD8AAA /* FromJSON.swift in Sources */,
 				09C616172135990D00CD8AAA /* ImmutableMappable.swift in Sources */,
 				09C6162F2135990D00CD8AAA /* NotificationUtils.swift in Sources */,
+				099E5D6B2136CA66000367FE /* ContactTableViewCell.swift in Sources */,
 				09C6163B2135990D00CD8AAA /* UIImageViewExtension.swift in Sources */,
 				09C616482135990D00CD8AAA /* UIScrollViewExtension.swift in Sources */,
 				09C616342135990D00CD8AAA /* FileUtils.swift in Sources */,
@@ -818,6 +886,7 @@
 				09C616422135990D00CD8AAA /* UIApplicationExtension.swift in Sources */,
 				09C616292135990D00CD8AAA /* TabBaseViewController.swift in Sources */,
 				092CB06321358699003F10E6 /* DBManager.swift in Sources */,
+				094166272136C4CC00BFFC2A /* User.swift in Sources */,
 				09C6164A2135990D00CD8AAA /* UINavigationBarExtension.swift in Sources */,
 				09C616222135990D00CD8AAA /* CNPJUtils.swift in Sources */,
 				09C616112135990D00CD8AAA /* DataTransform.swift in Sources */,
@@ -834,11 +903,14 @@
 				09C6162A2135990D00CD8AAA /* EmailUtils.swift in Sources */,
 				092CB0B721358699003F10E6 /* Session.swift in Sources */,
 				09C6162B2135990D00CD8AAA /* CPFUtils.swift in Sources */,
+				099E5D6F2136CBB7000367FE /* RealmManager.swift in Sources */,
+				099E5D622136C91C000367FE /* Conversa.swift in Sources */,
 				09C6162D2135990D00CD8AAA /* AlertUtils.swift in Sources */,
 				09C616372135990D00CD8AAA /* LibBaseViewController.swift in Sources */,
 				09C616132135990D00CD8AAA /* Map.swift in Sources */,
 				09C616462135990D00CD8AAA /* UIFontExtension.swift in Sources */,
 				092CB06021358699003F10E6 /* MainViewController.swift in Sources */,
+				099E5D662136CA05000367FE /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
