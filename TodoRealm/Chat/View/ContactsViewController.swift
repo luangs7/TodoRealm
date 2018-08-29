@@ -61,4 +61,8 @@ extension ContactsViewController: UITableViewDelegate, UITableViewDataSource{
 
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        pushViewController(viewController: ChatViewController(nibName: "ChatViewController", bundle: nil))
+    }
+    
 }

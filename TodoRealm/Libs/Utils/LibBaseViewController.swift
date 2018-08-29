@@ -267,6 +267,8 @@ extension LibBaseViewController {
         
     }
     
+    
+    
     open func addBlur(blurView: UIView){
         
         let myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)

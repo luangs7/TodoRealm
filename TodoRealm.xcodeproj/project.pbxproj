@@ -56,6 +56,8 @@
 		099E5D6B2136CA66000367FE /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099E5D692136CA66000367FE /* ContactTableViewCell.swift */; };
 		099E5D6C2136CA66000367FE /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099E5D6A2136CA66000367FE /* ContactTableViewCell.xib */; };
 		099E5D6F2136CBB7000367FE /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099E5D6E2136CBB7000367FE /* RealmManager.swift */; };
+		099E5D722136D401000367FE /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099E5D702136D401000367FE /* ChatViewController.swift */; };
+		099E5D732136D401000367FE /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099E5D712136D401000367FE /* ChatViewController.xib */; };
 		09C615F92135990D00CD8AAA /* BaseTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6159B2135990D00CD8AAA /* BaseTask.swift */; };
 		09C615FA2135990D00CD8AAA /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6159C2135990D00CD8AAA /* Exception.swift */; };
 		09C615FB2135990D00CD8AAA /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6159D2135990D00CD8AAA /* TaskManager.swift */; };
@@ -192,6 +194,8 @@
 		099E5D692136CA66000367FE /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		099E5D6A2136CA66000367FE /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
 		099E5D6E2136CBB7000367FE /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		099E5D702136D401000367FE /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		099E5D712136D401000367FE /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		09C6159B2135990D00CD8AAA /* BaseTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTask.swift; sourceTree = "<group>"; };
 		09C6159C2135990D00CD8AAA /* Exception.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exception.swift; sourceTree = "<group>"; };
 		09C6159D2135990D00CD8AAA /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
@@ -458,6 +462,8 @@
 				099E5D682136CA4E000367FE /* ContactCell */,
 				099E5D642136CA05000367FE /* ContactsViewController.swift */,
 				099E5D652136CA05000367FE /* ContactsViewController.xib */,
+				099E5D702136D401000367FE /* ChatViewController.swift */,
+				099E5D712136D401000367FE /* ChatViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -728,6 +734,7 @@
 			files = (
 				094166232135D0E800BFFC2A /* AddViewController.xib in Resources */,
 				092CB0BF21358699003F10E6 /* License Agreement for SF UI Font.pdf in Resources */,
+				099E5D732136D401000367FE /* ChatViewController.xib in Resources */,
 				092CB0C221358699003F10E6 /* SF-UI-Display-Heavy.otf in Resources */,
 				092CB0C921358699003F10E6 /* SF-UI-Display-Medium.otf in Resources */,
 				092CB0D421358699003F10E6 /* SF-UI-Text-Semibold.otf in Resources */,
@@ -898,6 +905,7 @@
 				09C616382135990D00CD8AAA /* CAGradientLayerExtension.swift in Sources */,
 				09C616432135990D00CD8AAA /* UIViewControllerExtension.swift in Sources */,
 				09C615FE2135990D00CD8AAA /* FBBoundingBox+MapKit.swift in Sources */,
+				099E5D722136D401000367FE /* ChatViewController.swift in Sources */,
 				09C616242135990D00CD8AAA /* NetworkUtils.swift in Sources */,
 				09C616262135990D00CD8AAA /* UserDefault.swift in Sources */,
 				09C6162A2135990D00CD8AAA /* EmailUtils.swift in Sources */,

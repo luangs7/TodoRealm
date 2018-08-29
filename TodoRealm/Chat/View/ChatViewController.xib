@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController" customModule="TodoRealm" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="4Za-uO-aIl" id="bn0-3k-54y"/>
+                <outlet property="messageBox" destination="Jfb-pV-C59" id="oZm-Pa-uyj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4Za-uO-aIl">
+                    <rect key="frame" x="0.0" y="20" width="375" height="582"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pRe-zw-ehY">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jfb-pV-C59">
+                    <rect key="frame" x="0.0" y="605" width="375" height="62"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ppn-Ct-fg4">
+                            <rect key="frame" x="5" y="5" width="365" height="52"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Ppn-Ct-fg4" secondAttribute="trailing" constant="5" id="56f-ZP-qGE"/>
+                        <constraint firstItem="Ppn-Ct-fg4" firstAttribute="top" secondItem="Jfb-pV-C59" secondAttribute="top" constant="5" id="CT2-ym-Ur3"/>
+                        <constraint firstItem="Ppn-Ct-fg4" firstAttribute="leading" secondItem="Jfb-pV-C59" secondAttribute="leading" constant="5" id="QRG-Oe-c82"/>
+                        <constraint firstAttribute="bottom" secondItem="Ppn-Ct-fg4" secondAttribute="bottom" constant="5" id="dT0-Sn-VaU"/>
+                        <constraint firstAttribute="height" constant="62" id="tD0-15-Irl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4Za-uO-aIl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ifb-Io-r74"/>
+                <constraint firstItem="4Za-uO-aIl" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="PES-cB-CyG"/>
+                <constraint firstItem="Jfb-pV-C59" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UsL-0H-3ON"/>
+                <constraint firstItem="Jfb-pV-C59" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="cyn-vy-zcd"/>
+                <constraint firstItem="Jfb-pV-C59" firstAttribute="top" secondItem="4Za-uO-aIl" secondAttribute="bottom" constant="3" id="flL-a2-via"/>
+                <constraint firstItem="Jfb-pV-C59" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ovc-nc-E2q"/>
+                <constraint firstItem="Jfb-pV-C59" firstAttribute="top" secondItem="4Za-uO-aIl" secondAttribute="bottom" constant="3" id="tS9-rm-yGN"/>
+                <constraint firstItem="4Za-uO-aIl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ttJ-R7-697"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="82.5"/>
+        </view>
+    </objects>
+</document>
